@@ -2,11 +2,11 @@
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <parent>
-        <groupId>org.nuxeo.ecm.distribution</groupId>
-        <artifactId>nuxeo-distribution</artifactId>
-        <version>10.10-HF25</version>
-    </parent>
+	<parent>
+	    <groupId>org.nuxeo.ecm.distribution</groupId>
+	    <artifactId>nuxeo-distribution</artifactId>
+	    <version>10.10</version>
+	  </parent>
 
     <groupId>org.nuxeo.ecm.platform</groupId>
     <artifactId>nuxeo-trash-cleanup-parent</artifactId>
@@ -21,9 +21,9 @@
     </modules>
 
     <scm>
-        <connection>scm:git:git://github.com/nuxeo-projects/nuxeo-trash-cleanup</connection>
-        <developerConnection>scm:git:git://github.com/nuxeo-projects/nuxeo-trash-cleanup</developerConnection>
-        <url>https://github.com/nuxeo-projects/nuxeo-trash-cleanup</url>
+        <connection>scm:git:git://github.com/nuxeo-sandbox/nuxeo-trash-cleaner</connection>
+        <developerConnection>scm:git:git://github.com/nuxeo-sandbox/nuxeo-trash-cleaner</developerConnection>
+        <url>https://github.com/nuxeo-sandbox/nuxeo-trash-cleaner</url>
     </scm>
          
     <repositories>
