@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<component name="org.nuxeo.ecm.platform.cleanup.service.trashcleanup.configuration">
+    <extension target="org.nuxeo.ecm.platform.cleanup.service.TrashCleanUp" point="trashcleanup">
+        <trashCleanUpConfig days="30"/>
+    </extension>
+</component>

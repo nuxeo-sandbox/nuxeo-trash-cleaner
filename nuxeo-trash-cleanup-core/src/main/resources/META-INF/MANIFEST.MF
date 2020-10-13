@@ -1,0 +1,13 @@
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: .
+Manifest-Version: 1.0
+Bundle-Vendor: org.nuxeo.ecm.platform
+Bundle-Version: 1.0.0
+Bundle-Name: nuxeo-trash-cleanup-core
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: org.nuxeo.ecm.platform.nuxeo-trash-cleanup-core;singleton=true
+Nuxeo-Component: OSGI-INF/trashcleanup-listener-contrib.xml,
+ OSGI-INF/trashcleanup-default-config.xml,
+ OSGI-INF/trashcleanup-cron-contrib.xml,
+ OSGI-INF/trashcleanup-bulk-contrib.xml,
+ OSGI-INF/trashcleanup-service-contrib.xml

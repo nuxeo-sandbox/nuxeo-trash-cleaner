@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Trash Clean Up Core Tests
+Bundle-SymbolicName: org.nuxeo.ecm.platform.cleanup.tests;singleton:=true
+Bundle-Vendor: Nuxeo
+

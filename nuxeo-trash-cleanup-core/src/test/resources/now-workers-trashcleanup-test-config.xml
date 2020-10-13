@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<component name="org.nuxeo.ecm.platform.cleanup.service.trashcleanup.configuration.test.now">
+    <require>org.nuxeo.ecm.platform.cleanup.service.trashcleanup.configuration</require>
+    <extension target="org.nuxeo.ecm.platform.cleanup.service.TrashCleanUp" point="trashcleanup">
+        <trashCleanUpConfig useWorker="true" years="0" months="0" days="0" hours="0" minutes="0" seconds="0"/>
+    </extension>
+</component>

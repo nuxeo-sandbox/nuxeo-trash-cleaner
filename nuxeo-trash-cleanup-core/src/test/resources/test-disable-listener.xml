@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<component name="org.nuxeo.ecm.platform.cleanup.listener.trashcleanup.test">
+
+    <extension target="org.nuxeo.ecm.core.event.EventServiceComponent" point="listener">
+        <listener name="trashCleanUpListener" enabled="false">
+        </listener>
+    </extension>
+
+</component>

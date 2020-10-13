@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<component name="org.nuxeo.ecm.platform.cron.trashcleanup">
+    <extension target="org.nuxeo.ecm.core.scheduler.SchedulerService" point="schedule">
+        <schedule id="monthly_trash_cleanup">
+            <eventId>trashCleanUp</eventId>
+            <eventCategory>default</eventCategory>
+            <!-- Every first of the month at 3am -->
+            <cronExpression>0 0 3 1 * ?</cronExpression>
+        </schedule>
+    </extension>
+</component>

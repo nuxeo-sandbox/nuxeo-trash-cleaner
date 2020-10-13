@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<component name="org.nuxeo.ecm.platform.cleanup.action.computation.trashcleanupaction" version="1.0.0">
+
+    <require>org.nuxeo.ecm.core.bulk</require>
+
+    <extension target="org.nuxeo.ecm.core.bulk" point="actions">
+        <!-- Internal -->
+        <action name="cleanUpTrash" bucketSize="100" batchSize="25" sequentialCommands="true"/>
+    </extension>
+
+    <!-- Action's processor -->
+    <extension target="org.nuxeo.runtime.stream.service" point="streamProcessor">
+        <!-- CleanUp Trash processor -->
+        <streamProcessor name="cleanUpTrash"
+                         class="org.nuxeo.ecm.platform.cleanup.action.computation.TrashCleanUpAction" logConfig="bulk"
+                         defaultConcurrency="1" defaultPartitions="1">
+            <policy name="default" maxRetries="3" delay="500ms" maxDelay="10s" continueOnFailure="false"/>
+        </streamProcessor>
+    </extension>
+
+</component>

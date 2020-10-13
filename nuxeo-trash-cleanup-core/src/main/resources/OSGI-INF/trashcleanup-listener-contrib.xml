@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<component name="org.nuxeo.ecm.platform.cleanup.listener.trashcleanup">
+
+    <extension target="org.nuxeo.ecm.core.event.EventServiceComponent" point="listener">
+        <listener postCommit="true" name="trashCleanUpListener"
+                  class="org.nuxeo.ecm.platform.cleanup.listener.TrashCleanUpListener">
+            <event>trashCleanUp</event>
+        </listener>
+    </extension>
+
+</component>
